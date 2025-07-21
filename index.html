@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo | Soluciones para tu Hogar</title>
+    
+    <!-- Google Fonts: Importamos las tipografías que usaremos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Configuración General y Reset --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212; /* Un negro oscuro, no puro */
+            color: #EAEAEA; /* Un blanco suave */
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* --- Contenedor Principal (Mobile-First) --- */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem; /* Más espacio arriba y abajo */
+        }
+
+        /* --- Tipografía y Estilo de Texto --- */
+        h1 {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 4rem; /* Grande y llamativo */
+            font-weight: 700;
+            color: #FFC107; /* Un color oro/ámbar para destacar */
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #B3B3B3; /* Un gris claro para el subtítulo */
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #FFC107;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+        }
+
+        /* --- Botones de Llamada a la Acción (CTA) --- */
+        .cta-section a {
+            display: block;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease-in-out, background-color 0.2s;
+        }
+
+        .cta-primary {
+            background-color: #FFC107;
+            color: #121212;
+        }
+
+        .cta-whatsapp {
+            background-color: #25D366;
+            color: #FFFFFF;
+        }
+        
+        .cta-secondary {
+            border: 2px solid #EAEAEA;
+            color: #EAEAEA;
+        }
+        
+        .cta-section a:hover {
+            transform: scale(1.03); /* Efecto al pasar el ratón */
+        }
+
+        /* --- Lista de Servicios --- */
+        .services-list {
+            list-style-type: none; /* Quitamos los puntos de la lista */
+            text-align: left; /* Alineamos el texto de la lista a la izquierda */
+            display: inline-block; /* Truco para centrar el bloque de la lista */
+            margin-top: 1rem;
+        }
+
+        .services-list li {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            color: #B3B3B3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>EDUARDO</h1>
+            <p class="tagline">Tu manitas de confianza</p>
+        </header>
+
+        <main>
+            <!-- SECCIÓN DE BOTONES DE CONTACTO DIRECTO -->
+            <section class="cta-section">
+                <a href="tel:+34635173677" class="cta-primary">📞 Llamar Ahora</a>
+                <a href="https://wa.me/34635173677" class="cta-whatsapp">💬 Enviar un WhatsApp</a>
+                <!-- Este es el enlace mágico para guardar el contacto -->
+                <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AEduardo%20(Manitas)%0ATEL%3BTYPE%3DCELL%3A635173677%0AEND%3AVCARD" download="contacto-eduardo.vcf" class="cta-secondary">👤 Guardar Contacto</a>
+            </section>
+
+            <!-- SECCIÓN DE SERVICIOS -->
+            <section>
+                <h2>Mis Servicios</h2>
+                <ul class="services-list">
+                    <li>⚡ <strong>Electricidad:</strong> enchufes, lámparas, tiras LED.</li>
+                    <li>🔧 <strong>Fontanería:</strong> averías, ajustes, revisiones.</li>
+                    <li>🔨 <strong>Montajes:</strong> muebles, estanterías, aparatos.</li>
+                    <li>🎨 <strong>Pintura</strong> y saneamiento de paredes.</li>
+                    <li>🚚 <strong>Otros:</strong> ayuda en traslados y pequeñas mudanzas.</li>
+                </ul>
+            </section>
+
+            <!-- SECCIÓN DE FILOSOFÍA DE TRABAJO -->
+            <section>
+                <h2>Mi Compromiso</h2>
+                <p>
+                    Ofrezco un trabajo serio y profesional. Siempre con un <strong>presupuesto cerrado</strong> para que no haya sorpresas. Tu tranquilidad y satisfacción son mi prioridad.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contacto Directo: <strong>635 173 677</strong></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
